@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar{
+    width: 500px;
+    height: 30px;
+    background-color: #ccc;
+    position: relative;
+    margin-top: 100px;
+}
+.progress-bar::before{
+    content: " ";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: #4a71a3;
+    transition: 1s all;
+}
+.progress-bar:hover::before{
+    width: 75%; 
+}
